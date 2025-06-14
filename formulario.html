@@ -28,9 +28,12 @@
     <form id="form-agendamento">
       <input type="text" name="nome" placeholder="Seu nome" required />
       <input type="tel" name="telefone" placeholder="Telefone" required />
-      <input type="date" name="data" required />
-      <input type="time" name="hora" required />
-      <select name="servico" required>
+      <input type="date" name="data" id="data" required>
+      
+      <select name="hora" id="hora" required>
+        <option value="">Escolha um horário</option></select>
+      
+        <select name="servico" required>
         <option value="">Escolha um serviço</option>
         <option value="corte">Corte</option>
         <option value="barba">Barba</option>
@@ -40,6 +43,9 @@
     </form>
     
   </section>
+ 
+  
+
 
   <footer>
     <p>📍 Rua Doutor Antonio da Costa Santos n°22 - 2410-084 - Centro </p>
@@ -53,5 +59,16 @@
   <video id="backgroundVideo" autoplay muted loop>
     <source src="video/barbeiro-curto.mp4.mp4" type="video/mp4">
   </video>
+
+  <a
+  href="https://wa.me/351961296887"
+  class="whatsapp-float"
+  target="_blank"
+  aria-label="Fale conosco no WhatsApp"
+>
+  <img src="img/10000484-removebg-preview.png" alt="WhatsApp" />
+</a>
+
+  
 </body>
 </html>
