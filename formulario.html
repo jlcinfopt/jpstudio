@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JP Studio - Barbearia</title>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    
+    <script>
+      emailjs.init({publicKey: "AHtBzi2NUFwzbW_aN" });
+    </script>
+
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="Logo JP Studio" class="logo-img" />
+    <h1>JP STUDIO CORTES CLASSICOS E ATUAIS</h1> 
+    <div class="btvoltar"><a href="index.html">Voltar</a></div>
+    
+</header>
+
+
+  <section id="agendamento">
+    <h2>Agende seu horário</h2>
+    
+    <form id="form-agendamento">
+      <input type="text" name="nome" placeholder="Seu nome" required />
+      <input type="tel" name="telefone" placeholder="Telefone" required />
+      <input type="date" name="data" required />
+      <input type="time" name="hora" required />
+      <select name="servico" required>
+        <option value="">Escolha um serviço</option>
+        <option value="corte">Corte</option>
+        <option value="barba">Barba</option>
+        <option value="corte_barba">Corte + Barba</option>
+      </select>
+      <button type="submit">Agendar</button>
+    </form>
+    
+  </section>
+
+  <footer>
+    <p>📍 Rua Doutor Antonio da Costa Santos n°22 - 2410-084 - Centro </p>
+    <p>📞 (351) 961296887</p>
+    <p>🕒 Seg a Sáb - 9h às 20h</p>
+  </footer>
+
+  
+
+  <script src="script.js"></script>
+  <video id="backgroundVideo" autoplay muted loop>
+    <source src="video/barbeiro-curto.mp4.mp4" type="video/mp4">
+  </video>
+</body>
+</html>
